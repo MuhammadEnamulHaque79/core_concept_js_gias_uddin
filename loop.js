@@ -71,23 +71,101 @@
 
 //function;
 
-function sum(number1,number2){
+// function sum(number1,number2){
     
-    var result = number1 + number2;
-    return result;
+//     var result = number1 + number2;
+//     return result;
+// }
+
+
+// var totalSum = sum(10,20);
+// console.log(totalSum);
+
+// function minus(num1,num2){
+//     var result = num1 - num2;
+//     return result;
+// }
+
+//  var totalMinus = minus(30,10);
+//  console.log(totalMinus);
+
+//  var total = totalSum + totalMinus;
+//  console.log(total);
+
+//for loop;
+//problem-1:
+// for(var i = 1; i <= 10; i++){
+//     console.log("Sorry!!");
+// }
+
+//problem-2;
+
+// function printSorry(name){
+//     for(var i =1; i <= 10; i++){
+//         console.log("sorry! " + name);
+//     }
+// }
+
+// printSorry("babu");
+
+//problem-3;
+function buyGroceries(riceQuantity,dalQuantity,oilQuantity){
+
+    var ricePerKilogram = 75;
+    var dalPerKilogram = 100;
+    var oilPerKilogram = 200;
+    
+    var riceTotalCost = ricePerKilogram * riceQuantity;
+    var dalTotalCost = dalPerKilogram * dalQuantity;
+    var oilTotalCost = oilPerKilogram * oilQuantity;
+    var totalCost = riceTotalCost + dalTotalCost + oilTotalCost;
+
+    return totalCost;
+}
+var netTotalCost = buyGroceries(2,2,2);
+// console.log(netTotalCost);
+
+//problem-4;
+function kmToMiles(km){
+    const result = km * 0.621;
+    return result.toFixed(2);
 }
 
+const convertedResult = kmToMiles(12);
+// console.log(convertedResult);
 
-var totalSum = sum(10,20);
-console.log(totalSum);
+//problem-5;
+function workout(workoutName){
+    var chestWorkout =["chestWorkout","chestWorkout","chestWorkout"];
+    var bicefWorkout =["bicefWorkout","bicefWorkout","bicefWorkout"];
+    var tricefWorkout =["tricefWorkout","tricefWorkout","tricefWorkout"];
 
-function minus(num1,num2){
-    var result = num1 - num2;
-    return result;
+    if(workoutName == "chest"){
+        return chestWorkout;
+    }else if(workoutName == "bicef"){
+        return bicefWorkout; 
+    }else if(workoutName == "tricef"){
+        return tricefWorkout;
+    }else{
+        console.log("I don't know else!!");
+    }
+        
+
 }
 
- var totalMinus = minus(30,10);
- console.log(totalMinus);
+var myWorkPlan = workout("chest");
+// console.log(myWorkPlan);
 
- var total = totalSum + totalMinus;
- console.log(total);
+var myDays = 25;
+var first1To10DaysFare = 500;
+var second11To20DaysFare = 300;
+var third21To25DaysFare = 100;
+
+
+
+
+
+
+
+
+
