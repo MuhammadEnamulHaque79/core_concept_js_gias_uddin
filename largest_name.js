@@ -34,7 +34,7 @@ let myName ="Muhammad Enamul Haque";
 for(let i = 0; i < myName.length; i++){
     // console.log(myName);
     let element = myName[i];
-    console.log(element);
+    // console.log(element);
 }
 console.log("..................");
 //alternative way to finding reverse name/string;
@@ -46,4 +46,13 @@ for(let i = myRealName.length - 1; i >= 0; i--){
     reversedString = reversedString + element;
 }
 
-console.log(reversedString);
+// console.log(reversedString);
+
+let n = 10;
+let sum = 0;
+for(let i = 1; i <= n; i++){
+    // console.log(i);
+    // let element = n[i];
+    sum = sum + i;
+}
+console.log(sum);
